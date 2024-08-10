@@ -1,0 +1,42 @@
+{
+  "name": "opentelemetry-decorators",
+  "version": "0.0.1",
+  "description": "OpenTelemetry decorators for classes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "keywords": [
+    "opentelemetry"
+  ],
+  "license": "MIT",
+  "author": "Sophia Willows <hello@sophiabits.com> (https://sophiabits.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sophiabits/opentelemetry-decorators.git"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "check-format": "prettier --check \"(src|test)/**/*.ts\"",
+    "format": "prettier --write \"(src|test)/**/*.ts\"",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0"
+  }
+}
